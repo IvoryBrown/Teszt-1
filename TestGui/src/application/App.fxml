@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AppController">
+   <children>
+      <AnchorPane fx:id="anchorPane" layoutX="14.0" layoutY="52.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="354.0" prefWidth="179.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="179.0" text="Név">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="179.0" text="Lakcím">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="179.0" text="Telo">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="233.0" layoutY="14.0" prefHeight="354.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="nameTxt" prefHeight="30.0" promptText="Név">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="adressTxt" prefHeight="30.0" promptText="Lakcím">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextArea fx:id="bakkerTAe" prefHeight="200.0" prefWidth="200.0" promptText="bakker">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextArea>
+               </children>
+            </VBox>
+            <Button layoutX="248.0" layoutY="441.0" mnemonicParsing="false" onAction="#addUser" prefHeight="25.0" prefWidth="82.0" text="Mentés" />
+            <ComboBox fx:id="cmb" layoutX="76.0" layoutY="489.0" prefWidth="150.0" />
+            <DatePicker layoutX="259.0" layoutY="514.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
